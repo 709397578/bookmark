@@ -1,0 +1,58 @@
+[
+  {
+    "type": "folder",
+    "addDate": 1585936359145,
+    "title": "书签栏",
+    "children": [
+      {
+        "type": "link",
+        "addDate": 1585975806951,
+        "title": "Google 翻译",
+        "icon": "https://logo.clearbit.com/translate.google.cn",
+        "url": "https://translate.google.cn/?hl=zh-CN&tab=TT"
+      },
+      {
+        "type": "link",
+        "addDate": 1586204431006,
+        "title": "攻城狮论坛-CCNA论坛,思科华为,思科论坛,CCNA题库,CCNA考试,CCNP题库,CCIE培训,思科认证,华为认证,工程师论坛 - 思科华为论坛",
+        "icon": "https://logo.clearbit.com/bbs.vlan5.com",
+        "url": "http://bbs.vlan5.com/forum.php"
+      },
+      {
+        "type": "link",
+        "addDate": 1681622455325,
+        "title": "OpenMediaVault 镜像使用帮助 - 清华大学开源软件镜像站使用帮助 - 开发文档 - 文江博客",
+        "icon": "https://logo.clearbit.com/www.wenjiangs.com",
+        "url": "https://www.wenjiangs.com/doc/pqmcnu7u"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "addDate": 1585936359146,
+    "title": "其他书签",
+    "children": [
+      {
+        "type": "link",
+        "addDate": 1700395816309,
+        "title": "github加速下载",
+        "icon": "https://logo.clearbit.com/d.serctl.com",
+        "url": "https://d.serctl.com/?url=https://github.com/lyswhut/lx-music-desktop/releases/download/v2.5.0/lx-music-desktop-v2.5.0-win7_x64-green.7z"
+      },
+      {
+        "type": "link",
+        "addDate": 1712746791078,
+        "title": "学生中心",
+        "icon": "https://logo.clearbit.com/xueli.xjtudlc.com",
+        "url": "https://xueli.xjtudlc.com/StudentCenter/Index.aspx"
+      },
+      {
+        "type": "link",
+        "addDate": 1721242181674,
+        "title": "nxez/rpi-fan: Raspberry Pi Fan Driver",
+        "icon": "https://logo.clearbit.com/github.com",
+        "url": "https://github.com/nxez/rpi-fan"
+      }
+    ]
+  }
+]

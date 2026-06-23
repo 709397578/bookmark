@@ -1,0 +1,126 @@
+/* 深色主题全局样式 */
+
+/* DesktopLayout 深色主题 */
+html.dark .desktop-layout .sidebar {
+  background: #1d1e1f;
+  border-right-color: #363637;
+}
+
+html.dark .desktop-layout .sidebar-header {
+  background: linear-gradient(135deg, #1a1b1c 0%, #2d2e2f 100%);
+  border-bottom-color: #363637;
+}
+
+html.dark .desktop-layout .login-prompt {
+  background: linear-gradient(135deg, #2d2e2f 0%, #3d3e3f 100%);
+}
+
+html.dark .desktop-layout .user-info {
+  background: linear-gradient(135deg, #3d3e3f 0%, #4d4e4f 100%);
+}
+
+html.dark .desktop-layout .section-header {
+  color: #e5e7eb;
+}
+
+html.dark .desktop-layout .collection-item:hover,
+html.dark .desktop-layout .folder-item:hover {
+  background: #2d2e2f;
+  border-color: #3d3e3f;
+}
+
+html.dark .desktop-layout .collection-item.active,
+html.dark .desktop-layout .folder-item.active {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 100%);
+  border-color: #3b82f6;
+}
+
+html.dark .desktop-layout .sidebar-footer {
+  background: #1d1e1f;
+  border-top-color: #363637;
+}
+
+html.dark .desktop-layout .top-bar {
+  background: #1d1e1f;
+  border-bottom-color: #363637;
+}
+
+html.dark .desktop-layout .content-area {
+  background: #0d0e0f;
+}
+
+html.dark .desktop-layout .bookmarks-header {
+  background: #1d1e1f;
+}
+
+html.dark .desktop-layout .bookmark-card {
+  background: #1d1e1f;
+  border-color: #363637;
+}
+
+html.dark .desktop-layout .bookmark-title {
+  color: #e5e7eb;
+}
+
+html.dark .desktop-layout .bookmark-url {
+  color: #9ca3af;
+}
+
+html.dark .desktop-layout .bookmark-description {
+  color: #6b7280;
+}
+
+/* Element Plus 深色主题覆盖 */
+html.dark .el-input__wrapper {
+  background-color: #2d2e2f;
+  box-shadow: 0 0 0 1px #363637 inset;
+}
+
+html.dark .el-input__inner {
+  color: #e5e7eb;
+}
+
+html.dark .el-button {
+  --el-button-bg-color: #2d2e2f;
+  --el-button-border-color: #363637;
+  --el-button-text-color: #e5e7eb;
+}
+
+html.dark .el-button--primary {
+  --el-button-bg-color: #3b82f6;
+  --el-button-border-color: #3b82f6;
+  --el-button-text-color: #ffffff;
+}
+
+html.dark .el-button--danger {
+  --el-button-bg-color: #ef4444;
+  --el-button-border-color: #ef4444;
+  --el-button-text-color: #ffffff;
+}
+
+html.dark .el-dialog {
+  background-color: #1d1e1f;
+  border: 1px solid #363637;
+}
+
+html.dark .el-dialog__title {
+  color: #e5e7eb;
+}
+
+html.dark .el-dialog__body {
+  color: #e5e7eb;
+}
+
+html.dark .el-form-item__label {
+  color: #e5e7eb;
+}
+
+html.dark .el-tag {
+  background-color: #2d2e2f;
+  border-color: #363637;
+  color: #e5e7eb;
+}
+
+html.dark .el-empty__description {
+  color: #9ca3af;
+}

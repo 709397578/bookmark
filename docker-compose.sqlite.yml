@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      args:
+        CGO_ENABLED: 1
+        INCLUDE_CHROME: ${INCLUDE_CHROME:-0}
+    container_name: pintree-backend
+    environment:
+      PORT: 8080
+      DB_DRIVER: sqlite
+      DB_PATH: /data/pintree.db
+      JWT_SECRET: ${JWT_SECRET:-your-production-jwt-secret}
+      JWT_EXPIRATION: 86400
+      FRONTEND_URL: http://localhost
+      UPLOAD_PATH: /root/uploads
+    ports:
+      - '8080:8080'
+    volumes:
+      - sqlite_data:/data
+      - upload_data:/root/uploads
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: pintree-frontend
+    ports:
+      - '80:80'
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  sqlite_data:
+  upload_data:

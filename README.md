@@ -1,6 +1,6 @@
 # Bookmart 前端
 
-PinTree 是一个现代化的书签管理系统，支持书签收藏、文件夹分类、网页快照、导入导出等功能。本仓库根目录为前端项目（Vue 3 + Vite），后端代码位于 [`backend/`](./backend)。
+Bookmart 是一个现代化的书签管理系统，支持书签收藏、文件夹分类、网页快照、导入导出等功能。本仓库根目录为前端项目（Vue 3 + Vite），后端代码位于 [`backend/`](./backend)。
 
 > 详细的架构设计参见 [ARCHITECTURE.md](./ARCHITECTURE.md)
 ## 项目预览

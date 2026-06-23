@@ -130,6 +130,37 @@ docker compose -f docker-compose.sqlite.yml up -d
 
 生产环境通过 `nginx.conf` 反向代理 `/api` 至后端容器，并托管 `dist/` 静态资源。
 
+## 快捷部署：使用docker-compose.yml一键部署
+```yml
+services:
+  backend:
+    image: ccr.ccs.tencentyun.com/bookmark/bookmark-backend:0.1.8
+    container_name: bookmark-backend
+    environment:
+      PORT: 8080
+      DB_DRIVER: sqlite
+      DB_PATH: /data/pintree.db
+      JWT_SECRET: ${JWT_SECRET:-your-production-jwt-secret}
+      JWT_EXPIRATION: 86400
+      FRONTEND_URL: http://localhost
+      UPLOAD_PATH: /root/uploads
+    ports:
+      - '8085:8080'
+    volumes:
+      - ./sqlite_data:/data
+      - ./upload_data:/root/uploads
+    restart: unless-stopped
+
+  frontend:
+    image: ccr.ccs.tencentyun.com/bookmark/bookmark-frontend:0.1.8
+    container_name: bookmark-frontend
+    ports:
+      - '80:80'
+    depends_on:
+      - backend
+    restart: unless-stopped
+```
+
 ## 📦 环境变量
 
 前端本身无需 `.env` 配置，开发期通过 Vite 代理与后端通信。Nginx 部署时相关反代规则见 `nginx.conf`。

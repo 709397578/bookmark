@@ -3,6 +3,10 @@
 PinTree 是一个现代化的书签管理系统，支持书签收藏、文件夹分类、网页快照、导入导出等功能。本仓库根目录为前端项目（Vue 3 + Vite），后端代码位于 [`backend/`](./backend)。
 
 > 详细的架构设计参见 [ARCHITECTURE.md](./ARCHITECTURE.md)
+## 项目预览
+<img width="1440" height="621" alt="image" src="https://github.com/user-attachments/assets/3cd76394-00c3-4d4d-aa2f-e6ad6caea8d7" />
+<img width="1250" height="498" alt="image" src="https://github.com/user-attachments/assets/5bba23ea-767f-4bd7-877b-0e282699f3b0" />
+
 
 ## ✨ 功能特性
 
